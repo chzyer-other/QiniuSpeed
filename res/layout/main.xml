@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="8dp"
+        >
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_gravity="center" android:src="@drawable/qiniu"
+            android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="七牛云存储服务体验"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true" android:layout_above="@+id/imageView1"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select"
+            android:id="@+id/imageView1"
+            android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <view android:layout_width="wrap_content"
+          android:layout_height="36dp"
+          android:visibility="invisible"
+          class="com.qiniu.speed.QiniuProgress" android:id="@+id/view"
+          android:layout_alignParentLeft="true" android:layout_marginLeft="13dp"
+          android:layout_alignTop="@+id/imageView1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:id="@+id/textView1" android:layout_centerHorizontal="true" android:layout_below="@id/imageView1"
+            android:layout_marginTop="10dp"/>
+</RelativeLayout>
+
